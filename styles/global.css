@@ -1,0 +1,75 @@
+/* header */
+header {
+    background-color: rgb(21, 68, 96);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    text-align: end;
+}
+h1 {
+    color: limegreen;
+    font-family: charm; 
+    font-size: 2rem;
+    margin-top: -1rem;
+    font-weight: lighter;
+}
+.shopping-cart {
+    width: 8%;   
+}
+.white-text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: limegreen;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* footer */
+footer {
+    background-color: rgb(52, 51, 51);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 2rem 0;
+}
+footer img {
+    width: 28%;
+}
+footer nav {
+    margin: 2rem 0;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+footer a+a:before {
+    content: "/\00a0";
+    padding: 8px;
+}
+
+/* nav menu links */
+.menu-links {
+    background-color: lightgray;
+    padding: 1.5rem 0;
+    padding-left: 10rem;
+}
+.menu-links a {
+    color: rgb(21, 68, 96);
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu-links a+a:before {
+    content: "/\00a0";
+    padding: 10px;
+}
+    

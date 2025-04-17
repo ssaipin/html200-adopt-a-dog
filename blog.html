@@ -5,17 +5,24 @@
     <meta charset="utf-8">
     <title>Blog</title>
     <link rel="stylesheet" type="text/css" href="styles/dogs.css">
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
 </head>
 
 <body>
     <header>
-        <img src="images/adoptadog-logo.svg" alt="White adopt a dog logo">
-        <h1>Seattle's premiere dog adoptiom agency</h1>
-        <div><img src="images/cart-icon.svg" alt="Shopping card"> $1234.56</div>
-        <p><a href="checkout.html">Checkout</a></p>
+        <div class="header-leftside">
+            <img src="images/adoptadog-logo.svg" alt="White adopt a dog logo">
+            <h1>Seattle's premiere dog adoptiom agency</h1>
+        </div>
+
+        <div class="header-rightside">
+            <img class="shopping-cart" src="images/cart-icon.svg" alt="Shopping card"><span class="white-text">
+                $1234.56</span>
+            <p><a href="checkout.html" class="btn">Checkout</a></p>
+        </div>
     </header>
 
-    <nav>
+    <nav class="menu-links">
         <a href="index.html">Home</a>
         <a href="dogs.html">Dogs</a>
         <a href="blog.html">Blog</a>
@@ -78,9 +85,9 @@
         <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
             esseque invenienihil imaximu scideru ptistiusam consequunt</p>
         <nav>
-            <a href="Home">Home</a>
-            <a href="Dogs">Dogs</a>
-            <a href="Contact">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="dogs.html">Dogs</a>
+            <a href="#">Contact</a>
         </nav>
         <p>&copy;2018 Adoptadog, LLC | Seattle, WA</p>
     </footer>
