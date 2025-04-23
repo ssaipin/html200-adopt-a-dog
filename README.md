@@ -2,7 +2,8 @@
 A web application that helps users browse, find, and adopt dogs from local shelters in Seattle, WA.
 
 ## 📌 Description
-**Adopt A Dog** connects pet lovers with dogs in need of a forever home. Users can view available dogs, learn about their personalities, and start the adoption process—all from the comfort of their home.
+**Adopt A Dog** connects pet lovers with dogs in need of a forever home. Users can view available dogs, learn about their personalities, and start the adoption process—all from the comfort of their home. 
+* Need to meet qaulifications https://github.com/ssaipin/html200-adopt-a-dog/blob/master/testing.txt
 
 ## ✨ Features
 * Browse adoptable dogs by breed, age, or location

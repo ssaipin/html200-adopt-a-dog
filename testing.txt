@@ -5,6 +5,7 @@ Qualified Candidates
 4. Financial stable.
 5. How long will the dog be left alone? Will it be crated?
 
+Responsive for all devices:
 Desktop Browsers
 - Chrome
 - Firefox
@@ -17,3 +18,10 @@ Moblie Browsers
 - Chrome for Android
 - Firefox for Android
 
+User Persona
+Name: Matha Lee
+Age: 30
+Sex: Female
+Job: Software Engineer. Matha works 3 days at the office, 2 days at home and off for the weekend.
+Hobbies: Matha loves various forms of art (painting, drawing and sculpting)
+Matha has different types of devices due to her job. She has Iphone, Samsung Galaxy Tabs, Laptop and PC desktop.
