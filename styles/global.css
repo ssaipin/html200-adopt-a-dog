@@ -158,7 +158,7 @@ button:hover {
 
 @media (max-width: 768px) {
     header {
-        height: 25vh;
+        height: 40vh;
         padding: 2rem;
     }
     .menu-links{

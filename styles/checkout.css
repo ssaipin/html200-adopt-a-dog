@@ -83,11 +83,10 @@ input {
   }
   .dog-card img {
     width: 5.5em;
-    object-fit: cover;
   }
-.dog-info {
+  .dog-info {
     width: 10em;
-}
+  }
 .dog-info p {
     color: black;
 }
