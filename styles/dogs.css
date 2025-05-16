@@ -4,6 +4,9 @@ h2 {
     font-weight: 700;
     font-size: 2rem;
 }
+.item img {
+    cursor: pointer;
+}
 @media (max-width:1024px) {
     h2 {
         text-align: center;

@@ -35,7 +35,9 @@ h2 {
     background-color: gray;
     color: white;
 }
-
+.item img {
+    cursor: pointer;
+}
 /* Tablet device */
 @media (max-width: 1024px) {
     h2 {
