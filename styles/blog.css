@@ -5,12 +5,12 @@ h2 {
     font-weight: 700;
     font-size: 2rem;
 }
-.flex-info {
+.blog-info {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-.flex-container {
+.blog-container {
     display: flex;
     flex-direction: row;
     margin-bottom: 2em;
@@ -25,22 +25,22 @@ p {
     font-family: "Open Sans", sans-serif;
     font-size: 1.1rem;
 }
-.flex-container img{
+.blog-container img{
     width: 100%;
 }
 
 @media (max-width: 1024px) {
-    .flex-container {
+    .blog-container {
         flex-direction: column;
         align-items: start;
         gap: 2em;
     }
-    .flex-container img{
+    .blog-container img{
         width: 60%;
     }
 }
 @media (max-width: 576px) {
-    .flex-container img {
+    .blog-container img {
         width: 100%;
     }
     p {
