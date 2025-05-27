@@ -41,22 +41,22 @@
         </div>
         <div class="form-info">
             <h2>Send us a message</h2>
-            <form method="GET">           
+            <form method="POST" id="formpage">           
                     <label>First Name
-                    <input type="text" name="firstname"></label>
+                    <input type="text" id="name" name="firstname"></label>
                 
                     <label>Last Name
-                    <input type="text" name="lastname"></label>
+                    <input type="text" id="lastname" name="lastname"></label>
                 
                     <label>Email
-                    <input type="email" name="email"></label>
+                    <input type="email" id="email" name="email"></label>
             
                     <label>Phone
-                    <input type="text" name="phone"></label>
+                    <input type="text" id="phone" name="phone"></label>
 
                 <div class="full">
                     <label>Message</label>
-                    <textarea name="message"></textarea>
+                    <textarea id="message" name="message"></textarea>
                 </div>
                 <div class="full">    
                     <button class="submit-sms" type="submit">Submit</button>
@@ -64,7 +64,6 @@
             </form>
         </div>
     </section>
-
 
     <footer>
         <img src="images/adoptadog-logo.svg" alt="White adopt a dog logo">
@@ -77,6 +76,7 @@
         </nav>
         <p>&copy;2018 Adoptadog, LLC | Seattle, WA</p>
     </footer>
+
     <script src="java.js" charset="utf-8"></script>
 </body>
 </html>

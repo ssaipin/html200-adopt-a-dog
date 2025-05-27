@@ -5,23 +5,9 @@ function showInfo(name, breed, fee) {
         "\nFee: " + fee);
 }
 
-const dogImgs = document.querySelectorAll('.item img').forEach((img) => {
-    img.addEventListener('click', () => {
-        const card = img.closest('.item');
-
-        const name = card.querySelector('.dog-name').textContent;
-        const breed = card.querySelector('.breed').textContent;
-        const fee = card.querySelector('.fee').textContent;
-
-        showInfo(name, breed, fee);
-
-    });
-});
-
 // Load total from sessionStorage 
 let total = sessionStorage.getItem('total') 
-    ? parseFloat(sessionStorage.getItem('total')) 
-    : 0;
+    ? parseFloat(sessionStorage.getItem('total')) : 0;
 
 const totalDisplays = document.getElementsByClassName('total-cost');
 
@@ -30,22 +16,21 @@ function updateTotalDisplays() {
     totalDisplays[i].textContent = `$${total.toFixed(2)}`;
   }
 }
-updateTotalDisplays(); // update initially on page load
+updateTotalDisplays(); // update total on each page
 
 // Add fee to total
-const adoptButtons = document.querySelectorAll('.item button');
-adoptButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const card = button.closest('.item');
-    const cost = parseFloat(card.querySelector('.fee').textContent.replace('$', ''));
+let dogPrice = 0;
 
-    total += cost;
+function clickAdopt(price) {
+  dogPrice = price;
+  document.querySelectorAll('.fee').textContent = dogPrice.toFixed(2);
+
+    total += dogPrice;
     sessionStorage.setItem('total', total.toFixed(2)); // store in session
 
     updateTotalDisplays(); // update all matching elements
     alert(`Your current total fee: $${total.toFixed(2)}`); // alert the update total
-  });
-});
+}
 
 // Reset the total after click submit button in checkout page
 function resetTotal() {
@@ -54,26 +39,28 @@ function resetTotal() {
   updateTotalDisplays();
 }
 
-// Form alert
-const form = document.getElementById('checkoutForm');
-
-form.addEventListener("submit", function(event) {
-  event.preventDefault(); // Stop the form reloading
+// Checkout and Contact Form alert
+document.getElementById('formpage').addEventListener("submit", function(event) {
+  event.preventDefault(); 
   alert("Thank you. The form information has been received");
 
   const formData = {
-    name: document.getElementById("fullname").value,
+    name: document.getElementById("name").value,
+    lastName: document.getElementById("lastname").value,
     email: document.getElementById("email").value,
     address: document.getElementById("address").value,
     city: document.getElementById("city").value,
     state: document.getElementById("state").value,
     zip: document.getElementById("zip").value,
     firstTimeAdopter: document.querySelector("input[name='choice']:checked")?.value || "Not selected",
-    pickup: document.querySelector("input[name='pickup']").value
+    pickup: document.querySelector("input[name='pickup']").value,
+    phone: document.getElementById("phone").value,
+    message: document.getElementById("message").value
 };
   
 console.log(formData);
 
 });
+
 
 
