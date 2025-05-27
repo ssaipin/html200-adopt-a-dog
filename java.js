@@ -39,28 +39,6 @@ function resetTotal() {
   updateTotalDisplays();
 }
 
-// Checkout and Contact Form alert
-document.getElementById('formpage').addEventListener("submit", function(event) {
-  event.preventDefault(); 
-  alert("Thank you. The form information has been received");
-
-  const formData = {
-    name: document.getElementById("name").value,
-    lastName: document.getElementById("lastname").value,
-    email: document.getElementById("email").value,
-    address: document.getElementById("address").value,
-    city: document.getElementById("city").value,
-    state: document.getElementById("state").value,
-    zip: document.getElementById("zip").value,
-    firstTimeAdopter: document.querySelector("input[name='choice']:checked")?.value || "Not selected",
-    pickup: document.querySelector("input[name='pickup']").value,
-    phone: document.getElementById("phone").value,
-    message: document.getElementById("message").value
-};
-  
-console.log(formData);
-
-});
 
 
 
